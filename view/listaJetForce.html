@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="jetForce">
+<head ng-controller="listaJediForceCtrl">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{titlePage}}</title>
+    <link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/bootstrap.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/app.css">
+    <script src="/static/lib/angular/angular.js"></script>
+    <script src="/static/lib/angular/angular-messages.js"></script>
+    <script src="/static/lib/angular/angular-filter.js"></script>
+      <script src="/static/lib/angular/angular-cookies.min.js"></script>
+    <script src="/static/lib/angular/Chart.js"></script>
+    <script src="/static/lib/angular/angular-chart.js"></script>
+    <script src="/static/lib/bootstrap/jquery.js"></script>
+    <script src="/static/lib/bootstrap/bootstrap.js" ></script>
+    <script src="http://cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/controllers/listaJetForce.js"></script>
+
+</head>
+<body ng-controller="listaJediForceCtrl">
+  <div ng-include="'nav.html'"></div>
+<div class="container-fluid">
+    <div class="row" id="listaJedis">
+        <div class="col-md-12 ">
+            <div class="page-header">
+                <h1>Lista de Jedis</h1>
+            </div>
+            <table ng-show="jedis.length > 0" class="table table-striped">
+                <thead>
+                <tr>
+                    <th id="dropdowAcoes">
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                AÇÕES
+                                <span class="glyphicon glyphicon-collapse-down" aria-hidden="true"></span>
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/cadastroJetForce.html">Adicionar</a></li>
+                                <li><a href="#" ng-click="toUpdate(jedis)" ng-class="{'disableLi': !isSelectedJedi(jedis) || countSelect(jedis) != 1}">Editar</a></li>
+                                <li><a href="#" ng-click="toDelete(jedis)" ng-class="{'disableLi': !isSelectedJedi(jedis)}">Excluir</a></li>
+                            </ul>
+                        </div>
+                    </th>
+                    <th><a href="" ng-click="ordenarPor('name')">Nome </a><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></th>
+                    <th><a href="" ng-click="ordenarPor('planet')">Planeta </a> <span class="glyphicon glyphicon-filter" aria-hidden="true"></span></th>
+                    <th><a href="" ng-click="ordenarPor('status')"> Status </a> <span class="glyphicon glyphicon-filter" aria-hidden="true"></span></th>
+                    <th><a href="" ng-click="ordenarPor('master')"> Mestre </a> <span class="glyphicon glyphicon-filter" aria-hidden="true"></span></th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr ng-class="{'info': jedi.selecionado}"
+                    ng-repeat="jedi in jedis | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+                    <td class="Center aligned"><input type="checkbox" ng-model="jedi.selecionado"/></td>
+                    <td>{{jedi.name}}</td>
+                    <td>{{jedi.planet}}</td>
+                    <td>{{jedi.status }}</td>
+                    <td>{{jedi.master}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

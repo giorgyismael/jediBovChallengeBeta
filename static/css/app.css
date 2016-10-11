@@ -1,0 +1,26 @@
+.container-fluid{
+	padding: 0!important;
+}
+#dropdowAcoes{
+	padding: 0px;
+	width: 13%;
+	padding-bottom: 3px;
+}
+
+.disableLi{
+		pointer-events:none;
+    opacity:0.4;
+}
+
+button.ng-invalid {
+    background-color: red;
+}
+
+span th.glyphicon {
+    font-size: 10px;
+}
+
+#listaJedis, #dashboardJedis, #cadastroJedi{
+	padding: 2%;
+	padding-top: 0%;
+}
