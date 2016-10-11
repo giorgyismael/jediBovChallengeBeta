@@ -19,8 +19,8 @@ Por esse motivo, o projeto não tem uma caracteristiva de single-page applicatio
 * Apache 2.4
 
 ### Configuração Apache ###
-*$ sudo mkdir /etc/apache/sites-enables/001-jedijet.conf
-*$ sudo nano /etc/apache/sites-enables/001-jedijet.conf
+* sudo mkdir /etc/apache/sites-enables/001-jedijet.conf
+* sudo nano /etc/apache/sites-enables/001-jedijet.conf
 <<
 <VirtualHost *:80>
         ServerAdmin giorgyismael@gmail.com
@@ -41,5 +41,5 @@ Por esse motivo, o projeto não tem uma caracteristiva de single-page applicatio
 >>
 
 ### Copiar Projeto ###
-Copie o projeto para a pasta /var/www 
-*$ sudo cp [project] /var/www
+Copie o projeto para a pasta /var/www:
+* sudo cp [project] /var/www
