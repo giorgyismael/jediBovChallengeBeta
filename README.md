@@ -23,8 +23,8 @@ do daemon apache e sua virtual host.
 * Apache 2.4
 
 ### Configuração Apache ###
->>> sudo mkdir /etc/apache/sites-enables/001-jedijet.conf
->>> sudo nano /etc/apache/sites-enables/001-jedijet.conf
+$ sudo mkdir /etc/apache/sites-enables/001-jedijet.conf
+$ sudo nano /etc/apache/sites-enables/001-jedijet.conf
 
 <VirtualHost *:80>
         ServerAdmin giorgyismael@gmail.com
@@ -44,4 +44,6 @@ do daemon apache e sua virtual host.
 </VirtualHost>
 
 
-
+### Copiar Projeto ###
+Copie o projeto para a pasta /var/www
+$ sudo cp [project] /var/www
