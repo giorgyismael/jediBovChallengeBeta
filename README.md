@@ -1,9 +1,6 @@
 # jediJeti #
 
-Primeiro projeto em AngularJS, para apresentar a empresa JetBov. Comecei meus estudos a praticamente uma semana. No decorrer do processo, fui descobrindo os padrões que deveriam ser utilizados, por isso, este projet naõ deve ser tomado como Base de desenvolvimento, tendo em vista que algumas diretrizes do angular não foram respeitadas, pelo puro desconhecimento delas.O fato do AngularJS trabalhar com  single-page applications, cria novos paradigmas de desenvolvimento, que até pouco tempo não
-era de meu conhecimento.
-
-Por esse motivo, o projeto não tem uma caracteristiva de single-page applications, mas sim, uma aplicação que roda com auxilio do daemon apache e sua virtual host.
+Este é meu primeiro projeto em AngularJS, deselvolvido para apresentar a empresa JetBov. Comecei a estudar o framework  praticamente a uma semana. No decorrer do processo, fui descobrindo padrões que deveriam ser utilizados, por este motivo, este projeto não deve ser tomado como "Base de Desenvolvimento", tendo em vista que diretrizes importantes do angular não foram respeitadas. O motivo foi a puro desconhecimento. O fato do AngularJS trabalhar com  single-page applications, cria novos paradigmas de desenvolvimento, que até pouco tempo não era de meu conhecimento. Por conta disso, o projeto não tem uma caracteristiva de single-page applications, mas sim, uma aplicação  single-page emulada com auxilio do daemon apache e sua virtual host.
 
 ### Módulos Injetados no AngularJS ###
 * angular-filter
