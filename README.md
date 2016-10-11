@@ -18,24 +18,23 @@ Este é meu primeiro projeto em AngularJS, deselvolvido para apresentar a empres
 ### Configuração Apache ###
 * sudo mkdir /etc/apache/sites-enables/001-jedijet.conf
 * sudo nano /etc/apache/sites-enables/001-jedijet.conf
-<<
-<VirtualHost *:80>
+
+VirtualHost *:80>
         ServerAdmin giorgyismael@gmail.com
         ServerName jetforce.com
 
         LogLevel warn
         DocumentRoot /var/www/jetforce/view/
 
-        <Directory />
+        Directory />
                 Require all granted
-        </Directory>
+        /Directory>
 
         Alias /static /var/www/jetforce/static/
 
         ErrorLog ${APACHE_LOG_DIR}/error-jetforce.log
         CustomLog ${APACHE_LOG_DIR}/access-jetforce.log combined
-</VirtualHost>
->>
+/VirtualHost>
 
 ### Copiar Projeto ###
 Copie o projeto para a pasta /var/www:
