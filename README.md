@@ -21,8 +21,8 @@ Por esse motivo, o projeto não tem uma caracteristiva de single-page applicatio
 ### Configuração Apache ###
 *$ sudo mkdir /etc/apache/sites-enables/001-jedijet.conf
 *$ sudo nano /etc/apache/sites-enables/001-jedijet.conf
-
-<VirtualHost 0.0.0.0:80>
+<<
+<VirtualHost *:80>
         ServerAdmin giorgyismael@gmail.com
         ServerName jetforce.com
 
@@ -38,7 +38,7 @@ Por esse motivo, o projeto não tem uma caracteristiva de single-page applicatio
         ErrorLog ${APACHE_LOG_DIR}/error-jetforce.log
         CustomLog ${APACHE_LOG_DIR}/access-jetforce.log combined
 </VirtualHost>
-
+>>
 
 ### Copiar Projeto ###
 Copie o projeto para a pasta /var/www 
