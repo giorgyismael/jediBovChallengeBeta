@@ -4,8 +4,7 @@ angular.module("jetForce").config(function (BackandProvider) {
 })
 
 angular.module("jetForce").factory('token', function() {
-    var token = "Bearer PLNy95TAERMm2gcUOWIFtu7iD_PkDJGHE2CSxTAljJEzYCPdYE69ozRntqAz70XIAYZdc61bqTiwQCQFbAyoCv8BIH8Wlj9z9g7JWTKxZvOMUU5BGjtjbbYh_yAnxOoBCDsTOUxODLqfRCWKnPcgWXN5ehHDgtokwApvK5_NOo-y2gV9IryF4l2jKAieDwSY2O3F0KfYwFyCSkG0mkc5fR95bLisHkbNGxJyAVtI0NPj2_BqRyuO1VF556WfbN9-3-4wOAjFxaEO-eRzNDyYtA";
-    return {
+    var token = "Bearer wgLJM4aVW3iIl-DdDBlfEjfYMuD9bvZgZtg-kNDJMSjDGNEVLIHImvymyHz41YAMqC8vAlg6E4g4tF1ZERAt1DtG2kB3j63-iL2ZaVfhKMEVlXXfuBmLidob1rlfKgsX-Nja7hoiwvltmmmGQxHn-v0BEUBzdOvOU5tBKNQSuYbVdbCzxStEwOqIuic4k1eUh-griNr99X6Bq-NVoX319iC_olfsXLb4Rb3_g-IoMnJOmAy_TQpPZzzpgv9mhRFsjRMCy_ivYXW6jUPtqtKNYQ"
       getValue: function() {
         return token;
       },
